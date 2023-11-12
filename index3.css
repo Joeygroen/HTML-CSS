@@ -1,8 +1,6 @@
-div.header {
-    position: relative;
-    align-content: center;
-    padding-left: 700px;
-    font-size: 30px;
+h1 {
+    margin-left: 870px;
+    font-size: 50px;
 }
 
 ul {
@@ -44,14 +42,10 @@ a {
     color: black;
 }
 
-h5 {
-    padding-top:150px;
-    padding-left: 400px;
-    font-size: medium;
-}
-
-img {
-    width:700px;
-    height:410px;
-    padding-left: 130px;
+p {
+    align-content: right;
+    position: fixed;
+    padding-left: 1780px;
+    padding-top: 600px;
+    color:orange;
 }

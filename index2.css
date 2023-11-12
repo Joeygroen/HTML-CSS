@@ -1,8 +1,11 @@
-div.header {
-    position: relative;
-    align-content: center;
-    padding-left: 700px;
-    font-size: 30px;
+div {
+    margin: 5px;
+    float: left;
+}
+
+h1 {
+    margin-left: 870px;
+    font-size: 50px;
 }
 
 ul {
@@ -14,7 +17,7 @@ ul {
     border: 2px;
     border-radius: 5px;
     background-color: forestgreen;
-    margin-right: 1800px;
+    margin-right: 1790px;
 }
     
 li {
@@ -44,14 +47,19 @@ a {
     color: black;
 }
 
-h5 {
-    padding-top:150px;
-    padding-left: 400px;
-    font-size: medium;
+p {
+    margin-top: 20px;
+    margin-left:50px;
+    font-size:large;
+
 }
 
 img {
-    width:700px;
-    height:410px;
-    padding-left: 130px;
+    margin-top: 30px;
+    margin-left: 90px;
+    width:800px;
+    height:440px;
+    border: 1px;
+    border-radius: 6px;
+    border-color: aliceblue;
 }
