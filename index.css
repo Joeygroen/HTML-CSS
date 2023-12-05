@@ -1,4 +1,4 @@
-div.header {
+div.grid-item {
     position: relative;
     align-content: center;
     padding-left: 700px;
@@ -9,39 +9,33 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    position:relative;
+    position: fixed;
     align-content: center;
     border: 2px;
     border-radius: 5px;
     background-color: forestgreen;
-    margin-right: 1800px;
+    margin-right: 1740px;
 }
     
 li {
-    position: relative;
+    display: inline;
+    margin-bottom: 5px;
     padding: 1px;
     font-family: fantasy;
-    font-size: 25px;
+    font-size: 35px;
     display: block;
-}
-
-li.menu {
-    position: relative;
-    padding: 1px;
-    font-family: fantasy;
-    font-size: 50px;
-    display: block;
+    text-align: center;
 }
 
 li a:hover {
     background-color: lightseagreen;
     color: black;
     border-radius: 5px;
-
   }
 
 a {
     color: black;
+    text-decoration: none;
 }
 
 h5 {

@@ -12,23 +12,17 @@ ul {
     border: 2px;
     border-radius: 5px;
     background-color: forestgreen;
-    margin-right: 1800px;
+    margin-right: 1740px;
 }
     
 li {
     position: relative;
     padding: 1px;
+    margin-bottom: 5px;
     font-family: fantasy;
-    font-size: 25px;
+    font-size: 35px;
     display: block;
-}
-
-li.menu {
-    position: relative;
-    padding: 1px;
-    font-family: fantasy;
-    font-size: 50px;
-    display: block;
+    text-align: center;
 }
 
 li a:hover {
@@ -40,12 +34,22 @@ li a:hover {
 
 a {
     color: black;
+    text-decoration: none;
+}
+
+div {
+    border: 5px;
+    border-style:dotted;
+    border-color: lightseagreen;
+    border-radius: 6px;
+    margin-top: 100px;
+    margin-left: 250px;
+    margin-right: 250px;
+    align-content: center;
 }
 
 p {
-    align-content: right;
-    position: fixed;
-    padding-left: 1780px;
-    padding-top: 600px;
-    color:orange;
+    color: black;
+    font-size: 25px;
+    margin-left: 30px;
 }
