@@ -7,13 +7,10 @@ a {
     text-decoration: none;
     font-size:large;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 5px;
 }
 
 button {
-    margin-left: 80%;
     text-align: center;
-    width: 20em;
     border: none;
     border-radius: 5px;
     color: black;
@@ -35,6 +32,11 @@ nav {
     display: flex;
     flex-direction: column;
 }
+
+a{
+    margin: 5px;
+}
+
 a:hover{
     background-color:coral;
     margin-right: 1em;
@@ -48,57 +50,39 @@ h1 {
 h3 {
     text-align: center;
     font-size: 40px;
-    max-height: fit-content;
 }
 img {
-    border-radius: 1vw;
+    border-radius: 5px;
     border: none;
+    padding-top: 50px;
 }
 
 div {
     text-align:center;
-    border:none;
 }
 
 .grid-container{
     display: grid;
     gap:2px;
     grid-template-rows: auto auto auto;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
+}
+
+#tekst1 {
+    grid-area: 1/2/1/2;
+}
+
+#tekst2 {
+    grid-area: 2/2/2/2;
 }
 
 footer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: baseline;
 }
 footer iframe{
     flex-grow: 2;
-}
-#paragraph1{
-    grid-area:2/1/2/2;
-}
-#foto1{
-    grid-area:1/2/3/2;
-}
-#foto2{
-    grid-area:3/1/4/2;
-}
-#paragraph2{
-    grid-area: 3/2/3/2;
-}
-#paragraph3{
-    grid-area: 4/1/4/1;
-}
-#foto3{
-    grid-area: 4/2/4/2;
-}
-#titel1{
-    font-size: 40px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-    color:blue;
-    grid-area: 1/1/2/2;
 }
 
 @media (orientation:portrait) {
@@ -111,12 +95,9 @@ footer iframe{
         text-decoration: none;
         font-size:large;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        margin: 5px;
     }
     
     button {
-        width: auto;
-        margin: 0;
         text-align: center;
         border: none;
         border-radius: 5px;
@@ -124,19 +105,21 @@ footer iframe{
         background-color: lightgreen;
         padding: 15px 32px;
     }
-    button:hover{
-        background-color:coral;
-    }
     
-    nav {
+    ul {
         border: 2px;
         border-style: initial;
         border-radius: 5px;
         background-color: lightgreen;
         list-style-type: none;
+        margin-right: 1720px;
     }
     
-    a:hover{
+    li {
+        margin: 5px;
+    }
+    
+    li:hover{
         background-color:coral;
         margin-right: 40px;
         border-radius: 5px;
@@ -157,23 +140,25 @@ footer iframe{
     
     div {
         text-align:center;
-        border: none;
     }
     
     .grid-container{
         display: flex;
         flex-direction: column;
-        border: flex;
     }
-
-    #paragraph1{
-        display: flex;
-
-        text-align:center;
-
-        flex-direction: column;
-        flex-flow: column;
-        flex-wrap: wrap;
+    
+    #tekst1 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    
+    #tekst2 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 2;
     }
     
     footer{
@@ -183,5 +168,5 @@ footer iframe{
     }
     footer iframe{
         flex-grow: 2;
-    } 
+    }
 }
